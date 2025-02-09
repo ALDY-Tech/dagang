@@ -1,0 +1,26 @@
+{
+  "name": "dagang",
+  "version": "1.0.0",
+  "description": "tes",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "npx tailwindcss -i ./asset/css/input.css -o ./asset/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALDY-Tech/dagang.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ALDY-Tech/dagang/issues"
+  },
+  "homepage": "https://github.com/ALDY-Tech/dagang#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17"
+  }
+}
