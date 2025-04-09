@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import HeroSlider from "@/components/HeroSlider";
 import ServiceSection from "@/components/ServiceSection";
 import AboutSection from "@/components/AboutSection";
+import ProductSection from "@/components/ProductSection";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,8 @@ export default function HomePage() {
       <HeroSlider />
       <ServiceSection />
       <AboutSection />
+      <ProductSection />
+      {/* Add more sections as needed */}
     </main>
   );
 }
