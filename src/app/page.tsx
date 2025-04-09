@@ -4,7 +4,8 @@ import ServiceSection from "@/components/ServiceSection";
 import AboutSection from "@/components/AboutSection";
 import ProductSection from "@/components/ProductSection";
 import TestimonialSection from "@/components/TestimonialSection";
-import ContactSection from "@/components/ContactSection";
+
+import ContactForm from "@/components/ContactForm";
 
 export default function HomePage() {
   return (
@@ -15,7 +16,7 @@ export default function HomePage() {
       <AboutSection />
       <ProductSection />
       <TestimonialSection />
-      <ContactSection />
+      <ContactForm />
       {/* Add more sections as needed */}
     </main>
   );
