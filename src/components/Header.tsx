@@ -55,7 +55,7 @@ const Header: React.FC = () => {
             About
           </Link>
           <Link
-            href="/product"
+            href="#products"
             className="block py-2 text-gray-700 hover:text-blue-600"
           >
             Products

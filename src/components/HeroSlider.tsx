@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 type Slide = {
   title: string;
@@ -30,12 +30,14 @@ const slides: Slide[] = [
 const HeroSlider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % slides.length);
-    }, 5000);
-    return () => clearInterval(interval);
+  const updateIndex = useCallback(() => {
+    setCurrentIndex((prev) => (prev + 1) % slides.length);
   }, []);
+
+  useEffect(() => {
+    const interval = setInterval(updateIndex, 5000);
+    return () => clearInterval(interval); // Cleanup to prevent memory leaks
+  }, [updateIndex]);
 
   return (
     <section className="relative w-full h-[80vh] overflow-hidden">
@@ -45,6 +47,7 @@ const HeroSlider: React.FC = () => {
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
+          aria-hidden={index !== currentIndex}
         >
           <Image
             src={slide.img}
@@ -53,10 +56,12 @@ const HeroSlider: React.FC = () => {
             className="object-cover"
             priority={index === 0}
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center">
+          <div className="absolute inset-0 bg-opacity-30 flex items-center">
             <div className="container mx-auto px-6 lg:px-20 text-white max-w-xl">
-              <h1 className="text-4xl font-bold mb-4">{slide.title}</h1>
-              <p className="mb-6">{slide.text}</p>
+              <h1 className="text-3xl md:text-4xl font-bold mb-4">
+                {slide.title}
+              </h1>
+              <p className="mb-6 text-sm md:text-base">{slide.text}</p>
               <div className="flex space-x-4">
                 <a
                   href="#contact"
