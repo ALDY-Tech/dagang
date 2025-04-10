@@ -7,12 +7,12 @@ const Footer: React.FC = () => {
         <p>
           &copy; {new Date().getFullYear()} All Rights Reserved by{" "}
           <a
-            href="https://html.design/"
+            href="https://github.com/ALDY-Tech"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-gray-300"
           >
-            Free Html Templates
+            ALDY
           </a>
         </p>
       </div>
