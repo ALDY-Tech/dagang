@@ -49,7 +49,7 @@ const Header: React.FC = () => {
             Home
           </Link>
           <Link
-            href="/about"
+            href="/"
             className="block py-2 text-gray-700 hover:text-blue-600"
           >
             About
@@ -61,13 +61,13 @@ const Header: React.FC = () => {
             Products
           </Link>
           <Link
-            href="/testimonial"
+            href="/"
             className="block py-2 text-gray-700 hover:text-blue-600"
           >
             Testimonial
           </Link>
           <Link
-            href="/contact"
+            href="/"
             className="block py-2 text-gray-700 hover:text-blue-600"
           >
             Contact Us
@@ -76,10 +76,10 @@ const Header: React.FC = () => {
 
         {/* Icons */}
         <div className="hidden lg:flex space-x-4 ml-4">
-          <Link href="/profile">
+          <Link href="/">
             <FaUser className="text-gray-700 hover:text-blue-600" />
           </Link>
-          <Link href="/cart">
+          <Link href="/">
             <FaShoppingCart className="text-gray-700 hover:text-blue-600" />
           </Link>
         </div>
