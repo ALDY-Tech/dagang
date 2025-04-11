@@ -49,7 +49,7 @@ const Header: React.FC = () => {
             Home
           </Link>
           <Link
-            href="/"
+            href="#about"
             className="block py-2 text-gray-700 hover:text-blue-600"
           >
             About
@@ -61,13 +61,13 @@ const Header: React.FC = () => {
             Products
           </Link>
           <Link
-            href="/"
+            href="#testimonials"
             className="block py-2 text-gray-700 hover:text-blue-600"
           >
             Testimonial
           </Link>
           <Link
-            href="/"
+            href="#contact"
             className="block py-2 text-gray-700 hover:text-blue-600"
           >
             Contact Us

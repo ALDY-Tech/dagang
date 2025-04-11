@@ -47,9 +47,9 @@ const TestimonialSection: React.FC = () => {
   const testimonial = testimonials[currentIndex];
 
   return (
-    <section className="py-16 bg-white">
+    <section id="testimonials" className="py-16 bg-white">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-12">Testimonial</h2>
+        <h2 className="text-3xl text-gray-950 font-bold mb-12">Testimonial</h2>
 
         <div className="max-w-2xl mx-auto bg-gray-100 p-6 rounded-xl shadow-md">
           <div className="flex flex-col items-center">
@@ -61,7 +61,7 @@ const TestimonialSection: React.FC = () => {
                 className="rounded-full object-cover"
               />
             </div>
-            <h5 className="text-xl font-semibold">{testimonial.name}</h5>
+            <h5 className="text-xl text-gray-950 font-semibold">{testimonial.name}</h5>
             <p className="text-sm text-gray-500 mb-4">{testimonial.role}</p>
             <p className="text-gray-700 text-sm italic">
               “{testimonial.message}”

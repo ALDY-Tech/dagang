@@ -13,22 +13,22 @@ const ContactForm: React.FC = () => {
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring"
+              className="w-full border border-gray-300 text-gray-700 rounded px-4 py-2 focus:outline-none focus:ring"
             />
             <input
               type="text"
               placeholder="Phone Number"
-              className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring"
+              className="w-full border border-gray-300 text-gray-700 rounded px-4 py-2 focus:outline-none focus:ring"
             />
             <input
               type="email"
               placeholder="Email"
-              className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring"
+              className="w-full border border-gray-300 text-gray-700 rounded px-4 py-2 focus:outline-none focus:ring"
             />
             <textarea
               placeholder="Message"
               rows={4}
-              className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring"
+              className="w-full border border-gray-300 text-gray-700 rounded px-4 py-2 focus:outline-none focus:ring"
             ></textarea>
             <button
               type="submit"
